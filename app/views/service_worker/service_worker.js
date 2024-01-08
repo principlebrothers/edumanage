@@ -86,10 +86,8 @@ setCatchHandler(async ({ event }) => {
 
 const checkOnlineStatus = async () => {
   try {
-    // Ensure correct path construction
-    const url = new URL('/network_test.png', window.location.origin);
+    const url = new URL('/network_test.png', 'http://localhost:3000');
 
-    // Use 'HEAD' method for lightweight check
     const response = await fetch(url, { method: 'HEAD' });
     return response.ok;
   } catch (error) {
@@ -104,6 +102,6 @@ setInterval(async () => {
   } else {
     console.log('offline');
   }
-}, 5000);
+}, 60000);
 
 
