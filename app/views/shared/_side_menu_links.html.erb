@@ -1,0 +1,11 @@
+<ul class='flex flex-col text-gray-50'>
+  <% [
+      { icon_name: 'gauge-high', label: 'Dashboard', path: super_admin_dashboard_path },
+      { icon_name: 'building-columns', label: 'Schools', path: super_admin_dashboard_path },
+      { icon_name: 'id-card', label: 'Onboard', path: super_admin_dashboard_path },
+      { icon_name: 'gear', label: 'Settings', path: super_admin_dashboard_path },
+      { icon_name: 'right-from-bracket', label: 'Sign out', path: super_admin_dashboard_path }
+      ].each do |item| %>
+    <%= side_menu_links(item[:path], item[:icon_name], item[:label]) %>
+  <% end %>
+</ul>
