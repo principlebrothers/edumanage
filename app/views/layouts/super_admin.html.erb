@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Edumanage</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property='og:title' content='Edumanage'/>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= favicon_link_tag asset_path('favicon.png'), rel: 'icon', type: 'image/png', sizes: '192x192' %>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <link rel="manifest" crossorigin="use-credentials" href="/manifest.json" />
+  </head>
+
+  <body>
+    <main class='flex'>
+      <nav class='flex'>
+        <article class='w-64 p-4 h-screen bg-gray-600 sticky top-0'>
+          <div class='flex items-center gap-3'>
+            <%= image_tag('favicon-192x192.png', class: 'w-12', alt: 'edumanage') %>
+            <h1 class='text-md py-2 text-white font-bold hidden md:block'>Edumanage</h1>
+          </div>
+          <%= render 'shared/side_menu_links' %>
+        </article>
+      </nav>
+      <%= yield %>
+    </main>
+  </body>
+</html>

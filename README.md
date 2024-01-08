@@ -28,10 +28,10 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="edu_manage_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Edu Manage README Template</b></h3>
+  <h3><b>Edu-Manage README Template</b></h3>
 
 </div>
 
@@ -132,7 +132,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone git@github.com:principlebrothers/Stakeconnect.git
+  git clone git@github.com:principlebrothers/edumanage.git
 
 ```
 
@@ -151,7 +151,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  bin/dev
+  ./bin/dev
 ```
 
 ### Run tests
